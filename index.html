@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="container-imagem">
+        <div id="calculadora">
+        <p id="campo"></p>
+       <div id="botoes-operacoes">
+            <button onclick="inserir('+')">+</button>
+            <button onclick="inserir('-')">-</button>
+            <button onclick="inserir('*')">X</button>
+            <button onclick="inserir('/')">/</button>
+        </div>
+        <div id="botoes-numeros-igual">
+                <div id="numeros">
+                <div id="numeros-fileira1">
+                        <button onclick="inserir('7')">7</button>
+                        <button onclick="inserir('4')">4</button>
+                        <button onclick="inserir('1')">1</button>
+                        <button onclick="inserir('0')">0</button>
+                    </div>
+                    <div id="numeros-fileira2">
+                        <button onclick="inserir('8')">8</button>
+                        <button onclick="inserir('5')">5</button>
+                        <button onclick="inserir('2')">2</button>
+                        <button onclick="inserir('.')">.</button>
+                    </div>
+                    <div id="numeros-fileira3">
+                        <button onclick="inserir('9')">9</button>
+                        <button onclick="inserir('6')">6</button>
+                        <button onclick="inserir('3')">3</button>
+                        <button onclick="limpar('C')">C</button>
+                    </div>
+                </div>
+                <div id="igual">
+                    <button onclick="calcular()">=</button>
+                </div>
+        </div>
+        </div>
+    </div>    
+    <script src="modelo.js"></script>
+</body>
+</html>
